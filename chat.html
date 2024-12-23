@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Feedback Chat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e5ddd5;
+    }
+
+    .chat-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: #075e54;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      max-width: 80%;
+    }
+
+    .message p {
+      margin: 0;
+    }
+
+    .timestamp {
+      font-size: 10px;
+      margin-top: 4px;
+      text-align: right;
+      color: #888;
+    }
+
+    .sender {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .incoming {
+      background: #f1f0f0;
+      align-self: flex-start;
+    }
+
+    .outgoing {
+      background: #dcf8c6;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">Team Feedback</div>
+        
+        <div class="message incoming">
+          <div class="sender">Sarah K. – Product Manager</div>
+          <p>Great work on the layout! The design looks clean and professional on desktop, but we noticed some alignment issues on the footer when testing on iOS Safari. Can we prioritize fixing that for the next iteration?</p>
+          <div class="timestamp">Nov 15, 2024, 9:45 AM</div>
+        </div>
+        
+        <div class="message incoming">
+          <div class="sender">Michael R. – CEO, Tech Haven</div>
+          <p>The homepage responsiveness on mobile looks much better compared to the initial version. However, the navigation menu on Android seems to lag when switching between tabs. Can we address this soon?</p>
+          <div class="timestamp">Dec 3, 2024, 2:10 PM</div>
+        </div>
+        
+        <div class="message incoming">
+          <div class="sender">Linda M. – Marketing Lead</div>
+          <p>Thanks for implementing the feedback from our last session! The testimonial section is visually appealing now, but could we add more variety in client pictures and backgrounds to enhance diversity?</p>
+          <div class="timestamp">Dec 8, 2024, 11:20 AM</div>
+        </div>
+        
+        <div class="message incoming">
+          <div class="sender">John D. – Quality Assurance Lead</div>
+          <p>During testing, we found a few inconsistencies with image loading on slower networks. Adding a placeholder image while loading might improve the user experience.</p>
+          <div class="timestamp">Nov 27, 2024, 4:35 PM</div>
+        </div>
+        
+        <div class="message incoming">
+          <div class="sender">Alex T. – UI/UX Designer</div>
+          <p>Love the hover effects on buttons—they add a polished feel. One suggestion: for the ‘Contact Us’ button, can we make the color pop a bit more to draw user attention?</p>
+          <div class="timestamp">Dec 16, 2024, 10:50 AM</div>
+        </div>
+    </div>
+    
+</body>
+</html>
